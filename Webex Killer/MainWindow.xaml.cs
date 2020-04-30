@@ -35,21 +35,24 @@ namespace Webex_Killer
         private ContextMenu SystemTrayContextMenu { get; set; }
         protected override void OnStateChanged(EventArgs e)
         {
-            if (WindowState == WindowState.Minimized)
+            if (WindowState == WindowState.Minimized) 
+            { 
                 this.Hide();
+            }
 
             base.OnStateChanged(e);
         }
 
-    #region Initialization and Destruction
+        #region Initialization and Destruction
         public MainWindow()
         {
             InitializeComponent();
-            this.WindowState = WindowState.Minimized;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            this.WindowState = WindowState.Minimized;
+
             AutomaticallyDestroyProcesses.SetBinding(CheckBox.IsCheckedProperty, 
                 new Binding("AutoKillProcesses") { Source = Properties.Settings.Default }
             );
