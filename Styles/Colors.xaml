@@ -1,0 +1,122 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Webex_Killer">
+    <Color x:Key="Button.Background">#FF4D4D50</Color>
+    <Color x:Key="Button.Background.Disabled">#FF202021</Color>
+    <Color x:Key="Button.Background.Hover">#FF606062</Color>
+    <Color x:Key="Button.Border">#FF404040</Color>
+    <Color x:Key="Button.Border.Disabled">#FFADB2B5</Color>
+    <Color x:Key="Button.Border.Hover">#FF909092</Color>
+    <Color x:Key="Button.Path">#FFF4F4F5</Color>
+    <Color x:Key="Button.Path.Disabled">#FF838383</Color>
+    <Color x:Key="Button.Text">#FFF4F4F5</Color>
+    <Color x:Key="Button.Text.Disabled">#FF838383</Color>
+
+    <Color x:Key="CheckBox.Text">#FFF4F4F5</Color>
+    <Color x:Key="CheckBox.Text.Disabled">#FF303030</Color>
+    <Color x:Key="CheckBox.Path.Checked">#FF00FF80</Color>
+    <Color x:Key="CheckBox.Path.Unchecked">#FFFF4040</Color>
+
+    <Color x:Key="Label.Text">#FFF4F4F5</Color>
+
+    <Color x:Key="TextBox.Background">#FF4D4D50</Color>
+    <Color x:Key="TextBox.Border">#FF404040</Color>
+    <Color x:Key="TextBox.Text">#FFF4F4F5</Color>
+
+    <Color x:Key="Window.Background">#FF2D2D30</Color>
+    <Color x:Key="Window.Border">#FFFF0080</Color>
+    <Color x:Key="Window.ControlBox.Button.Hover">#FF606062</Color>
+    <Color x:Key="Window.ControlBox.Button.Path">#FFF4F4F5</Color>
+    <Color x:Key="Window.ControlBox.Button.Pressed">#FF202022</Color>
+    <Color x:Key="Window.Text">#FFF4F4F5</Color>
+
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="Button.Background.Brush" Color="{DynamicResource Button.Background}"/>
+    <SolidColorBrush x:Key="Button.Background.Disabled.Brush" Color="{DynamicResource Button.Background.Disabled}"/>
+    <SolidColorBrush x:Key="Button.Background.Hover.Brush" Color="{DynamicResource Button.Background.Hover}"/>
+    <SolidColorBrush x:Key="Button.Border.Brush" Color="{DynamicResource Button.Border}"/>
+    <SolidColorBrush x:Key="Button.Border.Disabled.Brush" Color="{DynamicResource Button.Border.Disabled}"/>
+    <SolidColorBrush x:Key="Button.Border.Hover.Brush" Color="{DynamicResource Button.Border.Hover}"/>
+    <SolidColorBrush x:Key="Button.Path.Brush" Color="{DynamicResource Button.Path}"/>
+    <SolidColorBrush x:Key="Button.Path.Disabled.Brush" Color="{DynamicResource Button.Path.Disabled}"/>
+    <SolidColorBrush x:Key="Button.Text.Brush" Color="{DynamicResource Button.Text}"/>
+    <SolidColorBrush x:Key="Button.Text.Disabled.Brush" Color="{DynamicResource Button.Text.Disabled}"/>
+
+    <SolidColorBrush x:Key="ButtonSpinner.Background.Brush" Color="{DynamicResource ButtonSpinner.Background}"/>
+    <SolidColorBrush x:Key="ButtonSpinner.Border.Brush" Color="{DynamicResource ButtonSpinner.Border}"/>
+    <SolidColorBrush x:Key="ButtonSpinner.Path.Brush" Color="{DynamicResource ButtonSpinner.Path}"/>
+
+    <SolidColorBrush x:Key="ByteUpDown.Background.Brush" Color="{DynamicResource ByteUpDown.Background}"/>
+    <SolidColorBrush x:Key="ByteUpDown.Background.Disabled.Brush" Color="{DynamicResource ByteUpDown.Background.Disabled}"/>
+    <SolidColorBrush x:Key="ByteUpDown.Border.Brush" Color="{DynamicResource ByteUpDown.Border}"/>
+    <SolidColorBrush x:Key="ByteUpDown.Border.Disabled.Brush" Color="{DynamicResource ByteUpDown.Border.Disabled}"/>
+    <SolidColorBrush x:Key="ByteUpDown.Text.Brush" Color="{DynamicResource ByteUpDown.Text}"/>
+    <SolidColorBrush x:Key="ByteUpDown.Text.Disabled.Brush" Color="{DynamicResource ByteUpDown.Text.Disabled}"/>
+
+    <SolidColorBrush x:Key="CheckBox.Path.Checked.Brush" Color="{DynamicResource CheckBox.Path.Checked}"/>
+    <SolidColorBrush x:Key="CheckBox.Path.Unchecked.Brush" Color="{DynamicResource CheckBox.Path.Unchecked}"/>
+    <SolidColorBrush x:Key="CheckBox.Text.Brush" Color="{DynamicResource CheckBox.Text}"/>
+    <SolidColorBrush x:Key="CheckBox.Text.Disabled.Brush" Color="{DynamicResource CheckBox.Text.Disabled}"/>
+
+    <SolidColorBrush x:Key="ColorCanvas.Background.Brush" Color="{DynamicResource ColorCanvas.Background}"/>
+    <SolidColorBrush x:Key="ColorCanvas.Border.Brush" Color="{DynamicResource ColorCanvas.Border}"/>
+    <SolidColorBrush x:Key="ColorCanvas.Text.Brush" Color="{DynamicResource ColorCanvas.Text}"/>
+
+    <SolidColorBrush x:Key="ComboBox.Background.Brush" Color="{DynamicResource ComboBox.Background}"/>
+    <SolidColorBrush x:Key="ComboBox.Border.Brush" Color="{DynamicResource ComboBox.Border}"/>
+    <SolidColorBrush x:Key="ComboBox.Button.Brush" Color="{DynamicResource ComboBox.Button}"/>
+    <SolidColorBrush x:Key="ComboBox.Path.Brush" Color="{DynamicResource ComboBox.Path}"/>
+    <SolidColorBrush x:Key="ComboBox.Text.Brush" Color="{DynamicResource ComboBox.Text}"/>
+
+    <SolidColorBrush x:Key="DoubleUpDown.Background.Brush" Color="{DynamicResource DoubleUpDown.Background}"/>
+    <SolidColorBrush x:Key="DoubleUpDown.Background.Disabled.Brush" Color="{DynamicResource DoubleUpDown.Background.Disabled}"/>
+    <SolidColorBrush x:Key="DoubleUpDown.Border.Brush" Color="{DynamicResource DoubleUpDown.Border}"/>
+    <SolidColorBrush x:Key="DoubleUpDown.Border.Disabled.Brush" Color="{DynamicResource DoubleUpDown.Border.Disabled}"/>
+    <SolidColorBrush x:Key="DoubleUpDown.Text.Brush" Color="{DynamicResource DoubleUpDown.Text}"/>
+    <SolidColorBrush x:Key="DoubleUpDown.Text.Disabled.Brush" Color="{DynamicResource DoubleUpDown.Text.Disabled}"/>
+
+    <SolidColorBrush x:Key="IntegerUpDown.Background.Brush" Color="{DynamicResource IntegerUpDown.Background}"/>
+    <SolidColorBrush x:Key="IntegerUpDown.Background.Disabled.Brush" Color="{DynamicResource IntegerUpDown.Background.Disabled}"/>
+    <SolidColorBrush x:Key="IntegerUpDown.Border.Brush" Color="{DynamicResource IntegerUpDown.Border}"/>
+    <SolidColorBrush x:Key="IntegerUpDown.Border.Disabled.Brush" Color="{DynamicResource IntegerUpDown.Border.Disabled}"/>
+    <SolidColorBrush x:Key="IntegerUpDown.Text.Brush" Color="{DynamicResource IntegerUpDown.Text}"/>
+    <SolidColorBrush x:Key="IntegerUpDown.Text.Disabled.Brush" Color="{DynamicResource IntegerUpDown.Text.Disabled}"/>
+
+    <SolidColorBrush x:Key="Label.Text.Brush" Color="{DynamicResource Label.Text}"/>
+
+    <SolidColorBrush x:Key="ListBox.Background.Brush" Color="{DynamicResource ListBox.Background}"/>
+    <SolidColorBrush x:Key="ListBox.Background.Disabled.Brush" Color="{DynamicResource ListBox.Background.Disabled}"/>
+    <SolidColorBrush x:Key="ListBox.Border.Brush" Color="{DynamicResource ListBox.Border}"/>
+    <SolidColorBrush x:Key="ListBox.Border.Disabled.Brush" Color="{DynamicResource ListBox.Border.Disabled}"/>
+
+    <SolidColorBrush x:Key="ListItem.Text.Brush" Color="{DynamicResource ListItem.Text}"/>
+
+    <SolidColorBrush x:Key="ScrollBar.Grip.Brush" Color="{DynamicResource ScrollBar.Grip}"/>
+    <SolidColorBrush x:Key="ScrollBar.Grip.Disabled.Brush" Color="{DynamicResource ScrollBar.Grip.Disabled}"/>
+    <SolidColorBrush x:Key="ScrollBar.Track.Brush" Color="{DynamicResource ScrollBar.Track}"/>
+    <SolidColorBrush x:Key="ScrollBar.Track.Disabled.Brush" Color="{DynamicResource ScrollBar.Track.Disbled}"/>
+
+    <SolidColorBrush x:Key="TextBox.Background.Brush" Color="{DynamicResource TextBox.Background}"/>
+    <SolidColorBrush x:Key="TextBox.Border.Brush" Color="{DynamicResource TextBox.Border}"/>
+    <SolidColorBrush x:Key="TextBox.Text.Brush" Color="{DynamicResource TextBox.Text}"/>
+
+    <SolidColorBrush x:Key="TextOnlyButton.Text.Brush" Color="{DynamicResource TextOnlyButton.Text}"/>
+
+    <SolidColorBrush x:Key="ToggleSwitch.Background.Brush" Color="{DynamicResource ToggleSwitch.Background}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Background.Disabled.Brush" Color="{DynamicResource ToggleSwitch.Background.Disabled}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Border.Brush" Color="{DynamicResource ToggleSwitch.Border}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Border.Disabled.Brush" Color="{DynamicResource ToggleSwitch.Border.Disabled}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Foreground.Brush" Color="{DynamicResource ToggleSwitch.Foreground}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Foreground.Disabled.Brush" Color="{DynamicResource ToggleSwitch.Foreground.Disabled}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Thumb.Background.Brush" Color="{DynamicResource ToggleSwitch.Thumb.Background}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Thumb.Background.Disabled.Brush" Color="{DynamicResource ToggleSwitch.Thumb.Background.Disabled}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Thumb.Border.Brush" Color="{DynamicResource ToggleSwitch.Thumb.Border}"/>
+    <SolidColorBrush x:Key="ToggleSwitch.Thumb.Border.Disabled.Brush" Color="{DynamicResource ToggleSwitch.Thumb.Border.Disabled}"/>
+
+    <SolidColorBrush x:Key="Window.Background.Brush" Color="{DynamicResource Window.Background}"/>
+    <SolidColorBrush x:Key="Window.Border.Brush" Color="{DynamicResource Window.Border}"/>
+    <SolidColorBrush x:Key="Window.ControlBox.Button.Hover.Brush" Color="{DynamicResource Window.ControlBox.Button.Hover}"/>
+    <SolidColorBrush x:Key="Window.ControlBox.Button.Path.Brush" Color="{DynamicResource Window.ControlBox.Button.Path}"/>
+    <SolidColorBrush x:Key="Window.ControlBox.Button.Pressed.Brush" Color="{DynamicResource Window.ControlBox.Button.Pressed}"/>
+    <SolidColorBrush x:Key="Window.Text.Brush" Color="{DynamicResource Window.Text}"/>
+</ResourceDictionary>

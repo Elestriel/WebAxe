@@ -1,0 +1,50 @@
+﻿<Window x:Class="Webex_Killer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webex_Killer"
+        xmlns:p="clr-namespace:Webex_Killer.Properties"
+        xmlns:my="clr-namespace:Webex_Killer"
+        mc:Ignorable="d"
+        Title="Settings" Height="140" Width="280"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="CanMinimize"
+        Background="{DynamicResource Window.Background.Brush}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles\Colors.xaml"/>
+                <ResourceDictionary Source="Styles\Button.xaml"/>
+                <ResourceDictionary Source="Styles\CheckBox.xaml"/>
+                <ResourceDictionary Source="Styles\Label.xaml"/>
+                <ResourceDictionary Source="Styles\TextBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <ContextMenu x:Key="STContextMenu">
+                <MenuItem x:Name="STKillProcessesButton" Header="Kill Processes" Click="STKillProcessesButton_Click"/>
+                <Separator />
+                <MenuItem x:Name="STSettingsButton" Header="Settings" Click="STSettingsButton_Click"/>
+                <Separator />
+                <MenuItem x:Name="STQuitButton" Header="Quit" Click="STQuitButton_Click"/>
+            </ContextMenu>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <CheckBox x:Name="WatchProcessesCheckbox"
+                  Content="Watch Processes"
+                  Margin="10,20,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Checked="WatchProcessesCheckbox_Checked"
+                  Unchecked="WatchProcessesCheckbox_Unchecked"
+                  Style="{DynamicResource CheckBoxStyle}"/>
+        <CheckBox x:Name="AutomaticallyDestroyProcesses"
+                  Content="Automatically End Processes"
+                  Margin="10,60,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Style="{DynamicResource CheckBoxStyle}"/>
+    </Grid>
+</Window>

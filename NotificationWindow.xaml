@@ -1,0 +1,65 @@
+﻿<Window x:Class="Webex_Killer.NotificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webex_Killer"
+        mc:Ignorable="d"
+        Title="Notification" Height="112" Width="300"
+        WindowStyle="None"
+        ShowInTaskbar="False"
+        AllowsTransparency="True"
+        Background="{DynamicResource Window.Background.Brush}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles\Colors.xaml"/>
+                <ResourceDictionary Source="Styles\Button.xaml"/>
+                <ResourceDictionary Source="Styles\label.xaml"/>
+                <ResourceDictionary Source="Styles\TextBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="NotificationText"
+                 Grid.ColumnSpan="2"
+                 Grid.Row="0"
+                 Margin="10 10 10 0"
+                 Padding="0"
+                 BorderThickness="0"
+                 Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="CountdownText"
+                 Content="Snoozing in 15 Seconds"
+                 Grid.ColumnSpan="2"
+                 Grid.Row="1"
+                 Margin="0 0 10 0"
+                 Padding="0"
+                 HorizontalAlignment="Right"
+                 HorizontalContentAlignment="Right"
+                 VerticalAlignment="Bottom"
+                 Style="{DynamicResource LabelStyle}"/>
+        <Button x:Name="KillButton"
+                Content="Kill Apps"
+                Grid.Column="1"
+                Grid.Row="2"
+                Margin="10" 
+                Click="KillButton_Click"
+                Style="{DynamicResource ButtonStyle}"/>
+        <Button x:Name="SnoozeButton"
+                Content="Snooze"
+                Grid.Column="0"
+                Grid.Row="2"
+                Margin="10" 
+                Click="SnoozeButton_Click"
+                Style="{DynamicResource ButtonStyle}"/>
+    </Grid>
+</Window>
